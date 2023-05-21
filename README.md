@@ -24,7 +24,12 @@ One thing to note is that essentially everything in the implementation is either
 - Escape characters : The "\" symbol is used to read the next symbol as it is, and ignore any special meaning that it may have in the context of our markdown syntax.  
 - Links : There are two types of links, one is of the form <link> and the other is of the form \[text](link). Note that there can not be spaces between ) and ]. 
 
-### A Note on Nesting of Lists
+#### A Note on Nesting of Lists
 Lists can be nested, however we need to take care of the syntax in this case. Each list item needs to be ended with an empty line. For nested list items, we need to leave the number of lines equal to the degree of nesting of that list item. 
 
 Bold, italic etc. can be nested inside lists, tables etc. 
+
+## Instructions for use 
+1. Place the markdown file in the same folder as the SML file
+2. Compile the SML file and run the mdt2html function with a single parameter, the name of the markdown file passed as a string
+3. You will get the output html file named output.html
